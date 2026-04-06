@@ -48,26 +48,56 @@
             margin-bottom: 12px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.08);
         }
-        .article .zh {
+        .article .en {
             font-size: 1.05rem;
             font-weight: 600;
             color: #1e293b;
             margin-bottom: 4px;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
         }
-        .article .en {
+        .article .zh {
             font-size: 0.9rem;
             color: #64748b;
             margin-bottom: 8px;
         }
-        .article .desc-zh {
+        .article .desc-en {
             font-size: 0.92rem;
             color: #475569;
             margin-bottom: 4px;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
         }
-        .article .desc-en {
+        .article .desc-zh {
             font-size: 0.85rem;
             color: #94a3b8;
             margin-bottom: 8px;
+        }
+        .tts-btn {
+            flex-shrink: 0;
+            background: none;
+            border: 1px solid #cbd5e1;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2563eb;
+            font-size: 14px;
+            transition: background 0.15s, color 0.15s;
+            margin-top: 1px;
+        }
+        .tts-btn:hover {
+            background: #2563eb;
+            color: #fff;
+        }
+        .tts-btn.playing {
+            background: #2563eb;
+            color: #fff;
         }
         .article .meta {
             display: flex;
@@ -102,43 +132,65 @@
         <div class="category-title">business</div>
         
         <div class="article">
-            <div class="zh">Costco 出售的炒鍋因金屬蓋受熱而被召回 - 哥倫比亞廣播公司新聞</div>
-            <div class="en">Sauté pans sold at Costco recalled after metal caps on handle heat and &#34;forcefully eject&#34; - CBS News</div>
+            <div class="en">
+                <button class="tts-btn" onclick="speak(this)" data-text="Restaurants are forcing us to put phones away, and I’m not complaining - Digital Trends" title="Play">&#9654;</button>
+                <span>Restaurants are forcing us to put phones away, and I’m not complaining - Digital Trends</span>
+            </div>
+            <div class="zh">餐廳強迫我們把手機收起來，我沒有抱怨 - 數字趨勢</div>
             
-            <div class="desc-zh">One consumer reported sustaining bruising and burn injuries.</div>
+            <div class="desc-en">
+                <button class="tts-btn" onclick="speak(this)" data-text="Restaurants are asking diners to ditch phones, creating more meaningful, distraction-free experiences at the table." title="Play">&#9654;</button>
+                <span>Restaurants are asking diners to ditch phones, creating more meaningful, distraction-free experiences at the table.</span>
+            </div>
             
             
-            <div class="desc-en">One consumer reported sustaining bruising and burn injuries.</div>
+            <div class="desc-zh">Restaurants are asking diners to ditch phones, creating more meaningful, distraction-free experiences at the table.</div>
             
             <div class="meta">
-                <span>CBS News</span>
-                <a href="https://www.cbsnews.com/news/costco-saute-pans-recalled-heat/" target="_blank" rel="noopener">Read more &rarr;</a>
+                <span>Digital Trends</span>
+                <a href="https://www.digitaltrends.com/phones/restaurants-are-forcing-us-to-put-phones-away-and-im-not-complaining/" target="_blank" rel="noopener">Read more &rarr;</a>
             </div>
         </div>
         
         <div class="article">
-            <div class="zh">FBI 警告 iPhone 和 Android 用戶不要安裝這些應用程式 - 福布斯</div>
-            <div class="en">FBI Warns iPhone And Android Users—Do Not Install These Apps - Forbes</div>
+            <div class="en">
+                <button class="tts-btn" onclick="speak(this)" data-text="Trading Open Shadowed by Trump Escalation Threats: Markets Wrap - Bloomberg.com" title="Play">&#9654;</button>
+                <span>Trading Open Shadowed by Trump Escalation Threats: Markets Wrap - Bloomberg.com</span>
+            </div>
+            <div class="zh">交易開盤受到川普升級威脅的影響：市場結束 - Bloomberg.com</div>
             
+            <div class="desc-en">
+                <button class="tts-btn" onclick="speak(this)" data-text="US equity-index futures dropped and oil climbed after US President Donald Trump’s warning that he may significantly escalate the war in Iran, potentially worsening an energy-price shock that’s already upending the global economic outlook." title="Play">&#9654;</button>
+                <span>US equity-index futures dropped and oil climbed after US President Donald Trump’s warning that he may significantly escalate the war in Iran, potentially worsening an energy-price shock that’s already upending the global economic outlook.</span>
+            </div>
+            
+            
+            <div class="desc-zh">美國總統川普警告稱，他可能大幅升級伊朗戰爭，可能會加劇本已顛覆全球經濟前景的能源價格衝擊，隨後美國股指期貨下跌，油價上漲。</div>
             
             <div class="meta">
-                <span>Forbes</span>
-                <a href="https://www.forbes.com/sites/zakdoffman/2026/04/04/fbi-warns-iphone-and-android-users-do-not-install-these-apps/" target="_blank" rel="noopener">Read more &rarr;</a>
+                <span>Bloomberg</span>
+                <a href="https://www.bloomberg.com/news/articles/2026-04-05/trading-open-shadowed-by-trump-escalation-threats-markets-wrap" target="_blank" rel="noopener">Read more &rarr;</a>
             </div>
         </div>
         
         <div class="article">
-            <div class="zh">50 年歷史的披薩連鎖店關閉所有餐廳，第 7 章檔案 - thestreet.com</div>
-            <div class="en">50-year-old pizza chain closes all restaurants, files Chapter 7 - thestreet.com</div>
+            <div class="en">
+                <button class="tts-btn" onclick="speak(this)" data-text="Trump Is Reportedly Going Full Steam Ahead With The Golden Dome - Gizmodo" title="Play">&#9654;</button>
+                <span>Trump Is Reportedly Going Full Steam Ahead With The Golden Dome - Gizmodo</span>
+            </div>
+            <div class="zh">據報道，川普正全力推動金頂建築工程</div>
             
-            <div class="desc-zh">這次關閉加劇了披薩連鎖店的困境，甚至連必勝客和棒約翰等主要品牌也關閉了門市。</div>
+            <div class="desc-en">
+                <button class="tts-btn" onclick="speak(this)" data-text="A Bloomberg report provides a rare glimpse into the timeline for Trump&#39;s super secret and disputed project." title="Play">&#9654;</button>
+                <span>A Bloomberg report provides a rare glimpse into the timeline for Trump&#39;s super secret and disputed project.</span>
+            </div>
             
             
-            <div class="desc-en">The closure adds to a wave of pizza chain struggles, with even major brands like Pizza Hut and Papa John&#39;s shuttering locations.</div>
+            <div class="desc-zh">彭博社的一份報告罕見地展示了川普這個超級秘密且有爭議的項目的時間表。</div>
             
             <div class="meta">
-                <span>TheStreet</span>
-                <a href="https://www.thestreet.com/restaurants/50-year-old-pizza-chain-gina-marias-closes-all-restaurants-files-chapter-7" target="_blank" rel="noopener">Read more &rarr;</a>
+                <span>Gizmodo.com</span>
+                <a href="https://gizmodo.com/trump-is-reportedly-going-full-steam-ahead-with-the-golden-dome-2000742636" target="_blank" rel="noopener">Read more &rarr;</a>
             </div>
         </div>
         
@@ -146,47 +198,65 @@
         <div class="category-title">technology</div>
         
         <div class="article">
-            <div class="zh">中國高超音速風洞讓美國望塵莫及 - bgr.com</div>
-            <div class="en">China&#39;s Hypersonic Wind Tunnel Leaves America In The Dust - bgr.com</div>
+            <div class="en">
+                <button class="tts-btn" onclick="speak(this)" data-text="Multipolarity As World Government 3.0 &amp; Its Pied Pipers" title="Play">&#9654;</button>
+                <span>Multipolarity As World Government 3.0 &amp; Its Pied Pipers</span>
+            </div>
+            <div class="zh">多極化作為世界政府 3.0 及其花衣魔笛手</div>
             
-            <div class="desc-zh">中國處於技術前沿，其最強大的風洞擁有30馬赫的風速——遠遠超過美國製造的任何風洞。</div>
+            <div class="desc-en">
+                <button class="tts-btn" onclick="speak(this)" data-text="“BRICS” has been around for over a decade. The term “multipolarity” on the other hand, has been bandied about for at least over half a century. “BRICS multipolarity” is sold as a counter-weight and dialectical response or solution to Western imperial globalis…" title="Play">&#9654;</button>
+                <span>“BRICS” has been around for over a decade. The term “multipolarity” on the other hand, has been bandied about for at least over half a century. “BRICS multipolarity” is sold as a counter-weight and dialectical response or solution to Western imperial globalis…</span>
+            </div>
             
             
-            <div class="desc-en">China is at the cutting edge of technology, and its strongest wind tunnel boasts wind speeds of Mach 30 — far greater than anything that the U.S. has made.</div>
+            <div class="desc-zh">“金砖国家”已经存在十多年了。另一方面，“多极化”一词已经被广泛使用了至少半个多世纪。「金磚國家多極化」被當作西方帝國主義全球主義的製衡和辯證反應或解決方案而出售…</div>
             
             <div class="meta">
-                <span>BGR</span>
-                <a href="https://www.bgr.com/2135521/china-hypersonic-wind-tunnel-jf-22-left-america-dust/" target="_blank" rel="noopener">Read more &rarr;</a>
+                <span>Activistpost.com</span>
+                <a href="https://www.activistpost.com/multipolarity-as-world-government-3-0-its-pied-pipers/" target="_blank" rel="noopener">Read more &rarr;</a>
             </div>
         </div>
         
         <div class="article">
-            <div class="zh">索尼下架了 100 款蹩腳的 PS5、PS4 遊戲，其中包括《模擬耶穌》 - Push Square</div>
-            <div class="en">Sony Delists 100s More Crappy PS5, PS4 Games, Including Jesus Simulator - Push Square</div>
+            <div class="en">
+                <button class="tts-btn" onclick="speak(this)" data-text="Is AI Going to Turn Us All Into Middle Managers?" title="Play">&#9654;</button>
+                <span>Is AI Going to Turn Us All Into Middle Managers?</span>
+            </div>
+            <div class="zh">Is AI Going to Turn Us All Into Middle Managers?</div>
             
-            <div class="desc-zh">想知道會不會再漲</div>
+            <div class="desc-en">
+                <button class="tts-btn" onclick="speak(this)" data-text="What AI is actually doing to the workforce" title="Play">&#9654;</button>
+                <span>What AI is actually doing to the workforce</span>
+            </div>
             
             
-            <div class="desc-en">Wonder if it&#39;ll rise again</div>
+            <div class="desc-zh">What AI is actually doing to the workforce</div>
             
             <div class="meta">
-                <span>Push Square</span>
-                <a href="https://www.pushsquare.com/news/2026/04/sony-delists-100s-more-crappy-ps5-ps4-games-including-jesus-simulator" target="_blank" rel="noopener">Read more &rarr;</a>
+                <span>The Atlantic</span>
+                <a href="https://www.theatlantic.com/podcasts/2026/04/is-ai-going-to-turn-us-all-into-middle-managers/686677/" target="_blank" rel="noopener">Read more &rarr;</a>
             </div>
         </div>
         
         <div class="article">
-            <div class="zh">下一代遊戲希望《瑪利歐前鋒衝鋒》中的林克 - Nintendo Everything</div>
-            <div class="en">Next Level Games wanted Link in Mario Strikers Charged - Nintendo Everything</div>
+            <div class="en">
+                <button class="tts-btn" onclick="speak(this)" data-text="How NinjaOne went from scrappy startup to $5B challenger in the race to unify IT operations" title="Play">&#9654;</button>
+                <span>How NinjaOne went from scrappy startup to $5B challenger in the race to unify IT operations</span>
+            </div>
+            <div class="zh">NinjaOne 如何在統一 IT 營運的競賽中從鬥志旺盛的新創公司發展成為價值 50 億美元的挑戰者</div>
             
-            <div class="desc-zh">據一位參與《馬裡奧前鋒衝鋒》的開發者透露，在《馬裡奧前鋒衝鋒》中加入林克是有一些考慮的。作為一款馬裡奧遊戲，《前鋒衝鋒》預計會保留與該系列相關的角色。然而，有…</div>
+            <div class="desc-en">
+                <button class="tts-btn" onclick="speak(this)" data-text="Sal Sferlazza has a habit of building companies that get acquired. Before NinjaOne, the serial founder sold four startups in succession: a gaming studio to NCSoft, a data-protection firm to SonicWall, a network management company to Quest Software, and a file…" title="Play">&#9654;</button>
+                <span>Sal Sferlazza has a habit of building companies that get acquired. Before NinjaOne, the serial founder sold four startups in succession: a gaming studio to NCSoft, a data-protection firm to SonicWall, a network management company to Quest Software, and a file…</span>
+            </div>
             
             
-            <div class="desc-en">According to a developer that worked on Mario Strikers Charged, there was some consideration for having Link in Mario Strikers Charged. As a Mario game, Strikers Charged expectedly stuck with characters associated with that franchise. However, there was the p…</div>
+            <div class="desc-zh">薩爾·斯費拉扎（Sal Sferlazza）有創建被收購公司的習慣。在 NinjaOne 之前，這位連續創始人連續出售了四家新創公司：一家遊戲工作室賣給了 NCSoft，一家資料保護公司賣給了 SonicWall，一家網路管理公司賣給了 Quest Software，還有一家文件...</div>
             
             <div class="meta">
-                <span>Nintendoeverything.com</span>
-                <a href="https://nintendoeverything.com/next-level-games-wanted-link-in-mario-strikers-charged/" target="_blank" rel="noopener">Read more &rarr;</a>
+                <span>The Next Web</span>
+                <a href="https://thenextweb.com/news/ninjaone-unified-it-operations/" target="_blank" rel="noopener">Read more &rarr;</a>
             </div>
         </div>
         
@@ -196,5 +266,21 @@
             Powered by NewsAPI + Google Translate | Generated automatically
         </footer>
     </div>
+    <script>
+    function speak(btn) {
+        if (speechSynthesis.speaking) {
+            speechSynthesis.cancel();
+            document.querySelectorAll('.tts-btn.playing').forEach(b => b.classList.remove('playing'));
+            if (btn.classList.contains('playing')) return;
+        }
+        const utterance = new SpeechSynthesisUtterance(btn.dataset.text);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        btn.classList.add('playing');
+        utterance.onend = () => btn.classList.remove('playing');
+        utterance.onerror = () => btn.classList.remove('playing');
+        speechSynthesis.speak(utterance);
+    }
+    </script>
 </body>
 </html>
